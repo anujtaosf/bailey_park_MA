@@ -105,14 +105,6 @@ ul {
   margin-left: 1.5rem;
 }
 
-footer {
-  border-top: 2px solid #ddd;
-  padding-top: 1rem;
-  font-size: 0.9rem;
-  color: #555;
-  margin-top: 2rem;
-}
-
 .property-table {
   width: 100%;
   border-collapse: collapse;
@@ -138,8 +130,140 @@ footer {
   background-color: #f3f3f3;
 }
 
-.property-note {
+.property-source {
+  border-top: 2px solid #ddd;
+  padding-top: 1rem;
+  margin-top: 2rem;
+}
+
+.property-source p {
   font-size: 0.9rem;
   color: #555;
-  font-style: italic;
+  margin: 0;
+}
+
+/* Print button */
+.print-button-container {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0 2rem 0;
+}
+
+.print-button {
+  background-color: var(--brick);
+  color: white;
+  border: none;
+  padding: 0.875rem 2.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.print-button:hover {
+  background-color: #8a3624;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.print-button:active {
+  transform: translateY(1px);
+}
+
+/* Print styles for letter paper (8.5" x 11") */
+@media print {
+  @page {
+    size: letter;
+    margin: 0.75in;
+  }
+
+  body {
+    background-color: white;
+  }
+
+  /* Hide sidebar and print button when printing */
+  .sidebar,
+  .print-button-container {
+    display: none !important;
+  }
+
+  /* Adjust main content for print */
+  .report-container {
+    display: block;
+    height: auto;
+    overflow: visible;
+  }
+
+  .report-content {
+    padding: 0;
+    overflow: visible;
+  }
+
+  /* Header styling for print */
+  .report-header {
+    border-bottom: 2px solid var(--brick);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .report-header h1 {
+    font-size: 2rem;
+  }
+
+  /* Section styling */
+  section {
+    page-break-inside: avoid;
+    margin-bottom: 2rem;
+  }
+
+  h2 {
+    page-break-after: avoid;
+    margin-top: 1rem;
+  }
+
+  h3 {
+    page-break-after: avoid;
+  }
+
+  /* Table styling for print */
+  .property-table {
+    page-break-inside: avoid;
+    font-size: 0.9rem;
+  }
+
+  .property-table th,
+  .property-table td {
+    padding: 0.4rem;
+  }
+
+  /* Property source styling */
+  .property-source {
+    border-top: 1px solid #666;
+    padding-top: 0.75rem;
+    margin-top: 2rem;
+    page-break-before: avoid;
+  }
+
+  .property-source p {
+    color: #555;
+  }
+
+  /* Remove unnecessary backgrounds and shadows */
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* Ensure black text for printing */
+  p, li {
+    color: #000;
+  }
+
+  /* Optimize links for print */
+  a {
+    text-decoration: underline;
+    color: #000;
+  }
 }

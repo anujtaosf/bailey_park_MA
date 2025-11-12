@@ -194,13 +194,7 @@ function App() {
             This project improved local engagement and land reuse capacity.
           </p>
         </section>
-
-        <footer>
-          <p>
-            © 2025 U-M Team Bailey | Source: City of Detroit, Brilliant Detroit,
-            Detroit Food Academy, O’Connor Real Estate, HUD, and local reports.
-          </p>
-        </footer>
+        
     <section id="properties">
       <h2>Local Properties on the Market</h2>
       <p>
@@ -301,12 +295,13 @@ function App() {
           </tr>
         </tbody>
       </table>
-
-      <p className="property-note">
-        *Sources: LoopNet, CREXi. Rates and sizes are approximate and based
-        on listings available as of late 2025.
-      </p>
     </section>
+
+    <div className="print-button-container">
+      <button className="print-button" onClick={() => window.print()}>
+        Print Report
+      </button>
+    </div>
     </main>
     </div>
   );
