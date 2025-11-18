@@ -79,10 +79,6 @@ function MarketAnalysis() {
           neighborhood remains affordable and community-centered while positioned for steady growth, future projects will need to
           balance affordability with reinvestment to ensure benefits for existing residents.
         </p>
-      </section>
-
-      <section id="quantitative-text">
-        <h2>Market Quantitative Trends</h2>
         <p>
           The usages of newly renovated buildings show a rise in
           community-driven infrastructure that focuses on local engagement
