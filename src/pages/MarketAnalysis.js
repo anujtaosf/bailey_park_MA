@@ -1,88 +1,88 @@
 import React from "react";
 import mapImage from "../McDougall-Hunt-Info-Map.png";
+import infographicImage from "../neighborhood_demographics.png";
 
 function MarketAnalysis() {
   return (
     <div>
       <header className="report-header">
         <h1>Market Analysis</h1>
-        <p className="subtitle">McDougall-Hunt Neighborhood Overview</p>
+        <p className="subtitle">Bailey Park Neighborhood overview</p>
+        <p className="subtitle">McDougall-Hunt, Detroit</p>
       </header>
 
-      <section id="demographics">
-        <h2>Neighborhood Demographics</h2>
-        <ul>
-          <li>Population (2023): 1,328</li>
-          <li>Median Age: 56</li>
-          <li>Median Income: $36,078</li>
-          <li>Female Residents: 740</li>
-          <li>Male Residents: 588</li>
-          <li>Median Household Rent: $424</li>
-          <li>Median Commercial Rent: $4,500/month</li>
-        </ul>
-      </section>
+      <section id="demographics" className="two-column-section">
+        <div className="section-content">
+          <h2>Neighborhood Demographics</h2>
+          <p>
+            The demographic indicators show an <strong>older, low-income</strong> population with a <strong>higher share of female residents</strong> than male residents.
+          </p>
+        </div>
 
-      <section id="neighborhood-context">
-        <h2>Neighborhood Context</h2>
-        <div className="figure-container">
-          <img src={mapImage} alt="McDougall-Hunt Neighborhood Map" />
-          <p className="figure-caption"><strong>Figure 1:</strong> McDougall-Hunt Neighborhood Context Map</p>
+        <div className="section-visual">
+          <img
+            src={infographicImage}
+            alt="McDougall-Hunt Neighborhood Infographic"
+          />
         </div>
       </section>
 
-      <section id="history">
-        <h2>Neighborhood History</h2>
-        <p>
-          McDougall-Hunt is undergoing a period of transformation driven by
-          public and private redevelopment projects. The neighborhood's
-          history of disinvestment has made way for strategic reinvestment
-          through housing, education, and food-based community programs.
-        </p>
+      <section id="neighborhood-context" className="two-column-section">
+        <div className="section-visual">
+          <img src={mapImage} alt="McDougall-Hunt Neighborhood Map" />
+          <p className="figure-caption"><strong>Figure 1:</strong> McDougall-Hunt Neighborhood Context Map</p>
+        </div>
+
+        <div className="section-content">
+          <h2>Neighborhood History</h2>
+          <p>
+            McDougall-Hunt is undergoing a period of transformation driven by
+            public and private redevelopment projects. The neighborhood's
+            history of disinvestment has made way for strategic reinvestment
+            through housing, education, and food-based community programs.
+          </p>
+        </div>
       </section>
 
       <section id="quantitative">
-        <h2>Quantitative Trends</h2>
+        <h2>Market Quantitative Trends</h2>
+
+        <div className="trends-grid">
+          <div className="trend-box">
+            <h4>Average renovation cost</h4>
+            <p className="trend-value">$560/SF</p>
+            <p className="trend-description">
+              Historic & civic renovations often <strong>exceed $500/SF and rely on federal historic tax credits,</strong> community development grants, and philanthropy.
+            </p>
+          </div>
+
+          <div className="trend-box">
+            <h4>Average completion timeline</h4>
+            <p className="trend-value">4–5 years</p>
+            <p className="trend-description">
+              Project timelines range usually from <strong>four to eight years</strong> due to environmental remediation, preservation, and financing complexity.
+            </p>
+          </div>
+
+          <div className="trend-box">
+            <h4>Average total project cost</h4>
+            <p className="trend-value">$9.3M</p>
+            <p className="trend-description">
+              Based on calculations, <strong>the average total project cost is about $9.3M.</strong>
+            </p>
+          </div>
+        </div>
+
         <p>
-          Average total project cost: ~<strong>$9.3M</strong> <br />
-          Average renovation cost: ~<strong>$560/SF</strong> <br />
-          Average completion timeline: ~<strong>4–5 years</strong>
-        </p>
-        <p>
-          The average renovation costs in the area of historic and civic
-          buildings tend to be over $500/SF and are often funded by federal
-          historic tax credits, community development grants, and
-          philanthropic support. There is also a relatively long development
-          cycle across projects. Projects have taken anywhere from four to
-          eight years to complete due to environmental remediation, historic
-          preservation requirements, and financial barriers.
-        </p>
-        <p>
-          There are many smaller-scale community projects, such as Detroit
-          Food Academy's renovation at 3442 McDougall ($360,000) and Brilliant
-          Detroit's McDougall-Hunt Hub ($20,000). These have a large financial
-          gap compared to large adaptive reuse efforts like 1337 Division
-          ($15.5M) or The Assembly in Corktown ($39M). This disparity
-          highlights two parallel investment pathways in the neighborhood. The
-          first is mission-driven renovations with smaller budgets that meet
-          immediate community needs. The second being capital-intensive
-          adaptive reuse projects that aim to attract creative or new
-          industries and new residents.
-        </p>
-        <p>
-          The data we've gathered indicates that while Mcdougall-Hunt remains
-          an affordable and community-centered neighborhood, it is also set up
-          for steady growth. Property values appear to be subtly increasing,
-          and long-term capital is beginning to take off through investment
-          and federal infrastructure projects. Mcdougall-Hunt's future
-          development projects will likely depend on balancing affordability
-          with reinvestment. We should ensure that projects benefit existing
-          residents while also attracting new economic opportunities and
-          bringing money into the neighborhood.
+          Smaller, mission-driven projects (e.g., Detroit Food Academy at $360k; Brilliant Detroit at $20k) contrast with capital-intensive
+          adaptive reuse (e.g., 1337 Division at $15.5M; Assembly at $39M), revealing two parallel investment pathways. As the
+          neighborhood remains affordable and community-centered while positioned for steady growth, future projects will need to
+          balance affordability with reinvestment to ensure benefits for existing residents.
         </p>
       </section>
 
-      <section id="infrastructure">
-        <h2>Infrastructure Trends</h2>
+      <section id="quantitative-text">
+        <h2>Market Quantitative Trends</h2>
         <p>
           The usages of newly renovated buildings show a rise in
           community-driven infrastructure that focuses on local engagement

@@ -85,6 +85,33 @@ section {
   margin-bottom: 3rem;
 }
 
+/* Two-column section layout */
+.two-column-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+  margin-bottom: 3rem;
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.section-visual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-visual img {
+  max-width: 100%;
+  height: auto;
+  border: none;
+}
+
 h2 {
   color: var(--navy);
   border-left: 5px solid var(--brick);
@@ -231,6 +258,54 @@ ul {
   color: #555;
   margin-top: 0.75rem;
   font-style: italic;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 968px) {
+  .two-column-section {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/* Trend Boxes */
+.trends-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.trend-box {
+  background-color: #f9f5ed;
+  padding: 2.5rem 2rem;
+  border: none;
+  border-radius: 4px;
+  box-shadow: none;
+  text-align: center;
+}
+
+.trend-box h4 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #000;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.trend-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--brick);
+  margin: 1rem 0 1.5rem 0;
+}
+
+.trend-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #000;
+  margin-top: 0.75rem;
 }
 
 /* Table of Contents */
@@ -438,5 +513,49 @@ ul {
     color: #333;
     font-size: 0.85rem;
     margin-top: 0.5rem;
+  }
+
+  /* Two-column sections for print */
+  .two-column-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    page-break-inside: avoid;
+    margin-bottom: 2rem;
+  }
+
+  .section-visual img {
+    max-width: 100%;
+    border: none;
+  }
+
+  /* Print-friendly trend boxes */
+  .trends-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    page-break-inside: avoid;
+  }
+
+  .trend-box {
+    background-color: #f9f5ed !important;
+    border: none !important;
+    padding: 1.5rem !important;
+    page-break-inside: avoid;
+    text-align: center;
+  }
+
+  .trend-box h4 {
+    color: #000 !important;
+  }
+
+  .trend-value {
+    font-size: 1.5rem;
+    color: var(--brick) !important;
+  }
+
+  .trend-description {
+    font-size: 0.85rem;
+    color: #000 !important;
   }
 }
