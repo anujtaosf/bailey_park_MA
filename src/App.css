@@ -271,7 +271,7 @@ ul {
 /* Trend Boxes */
 .trends-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   margin: 2rem 0;
 }
@@ -388,6 +388,17 @@ ul {
   @page {
     size: letter;
     margin: 0.75in;
+  }
+
+  /* Hide browser-generated headers and footers (URL, date, page title) */
+  @page {
+    margin-top: 0.75in;
+    margin-bottom: 0.75in;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
   }
 
   body {

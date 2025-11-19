@@ -63,14 +63,6 @@ function MarketAnalysis() {
               Project timelines range usually from <strong>four to eight years</strong> due to environmental remediation, preservation, and financing complexity.
             </p>
           </div>
-
-          <div className="trend-box">
-            <h4>Average total project cost</h4>
-            <p className="trend-value">$9.3M</p>
-            <p className="trend-description">
-              Based on calculations, <strong>the average total project cost is about $9.3M.</strong>
-            </p>
-          </div>
         </div>
 
         <p>
@@ -124,55 +116,70 @@ function MarketAnalysis() {
 
         <h3>HUD Choice Neighborhoods</h3>
         <p>
+          <strong>Project Cost:</strong> $40 million in federal funding
+        </p>
+        <p>
           A transformative redevelopment led by the Detroit Housing and
           Revitalization Department and Detroit Housing Authority. The project
           revitalizes the Forest Park Apartments and Diggs Housing Complex,
-          introducing new mixed-income housing near Eastern Market with up to
-          <strong> $40 million in federal funding</strong>. Expected
+          introducing new mixed-income housing near Eastern Market. Expected
           completion in 2026.
         </p>
 
         <h3>I-375 Reconnecting Communities</h3>
         <p>
+          <strong>Project Cost:</strong> $500 million total ($104.6 million in federal funding)
+        </p>
+        <p>
           The I-375 freeway is being converted into a boulevard designed to
-          reconnect communities and increase accessibility. The project's
-          estimated cost is around <strong>$500 million</strong> with
-          approximately <strong>$104.6 million</strong> in federal funding.
+          reconnect communities and increase accessibility.
         </p>
 
         <h3>Detroit Food Academy</h3>
         <p>
-          Located at <strong>3442 McDougall Street</strong>, this renovation
+          <strong>Project Cost:</strong> $360,000
+        </p>
+        <p>
+          Located at 3442 McDougall Street, this renovation
           transforms a former Heidelberg Project headquarters into teaching
           kitchens and youth café spaces. The goal is to empower Detroit youth
-          through culinary education and entrepreneurship. Total investment:
-          <strong> $360,000</strong>.
+          through culinary education and entrepreneurship.
         </p>
 
         <h3>Brilliant Detroit Hub</h3>
         <p>
-          A repurposed home at <strong>2706 Charlevoix</strong> provides early
+          <strong>Project Cost:</strong> $20,000
+        </p>
+        <p>
+          A repurposed home at 2706 Charlevoix provides early
           childhood education and family support services. Though a smaller
-          project (~<strong>$20,000</strong>), it contributes significantly to
-          social infrastructure.
+          project, it contributes significantly to social infrastructure.
         </p>
 
         <h3>1337 Division St Adaptive Reuse</h3>
         <p>
+          <strong>Project Cost:</strong> $15.5 million
+        </p>
+        <p>
           A mixed-use creative commercial redevelopment of a 1922 warehouse
           near Eastern Market. The project includes kitchens, event spaces,
-          and public gathering areas, with a total cost of
-          <strong> $15.5 million</strong>.
+          and public gathering areas.
         </p>
 
         <h3>The Assembly Apartments</h3>
         <p>
-          A $39 million adaptive reuse of the historic Edson, Moore & Company
+          <strong>Project Cost:</strong> $39 million
+        </p>
+        <p>
+          An adaptive reuse of the historic Edson, Moore & Company
           warehouse in Corktown, now offering apartments and creative
           workspace.
         </p>
 
         <h3>Hunt Street Station</h3>
+        <p>
+          <strong>Project Cost:</strong> No price given
+        </p>
         <p>
           The former Third Precinct Police Station at 2200 Hunt Street was
           transformed into coworking offices for small businesses and creative
@@ -180,6 +187,9 @@ function MarketAnalysis() {
         </p>
 
         <h3>Vacant Land Transformation</h3>
+        <p>
+          <strong>Project Cost:</strong> No price given
+        </p>
         <p>
           Detroit Land Lab and local residents converted vacant lots near the
           Heidelberg Project into eco-literacy and community garden spaces.
